@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {GidcRootModule} from '@gidc/pali/root-module';
+import { GidcHeaderModule } from '@gidc/pali/header';
 
 import { AppComponent } from './app.component';
 
@@ -8,7 +10,11 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+        // PaLi default options
+        GidcRootModule,
+        //KN customised header
+        GidcHeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
